@@ -532,7 +532,8 @@ function shareToPlatform(platform, projectId) {
     const card = project.getAttribute('data-card');
     
     // Create the project URL dynamically
-    const projectUrl = `${rootUrl}/${title}/${card}`;
+    const projectUrl = `${rootUrl}`;
+    // const projectUrl = `${rootUrl}/${card}/${title}`;
     // const projectUrl = `https://youtu.be/GP-F1SQT39c?si=v0SN58f6FBIpYdEq`;
     
     let shareUrl = '';
@@ -563,7 +564,8 @@ function copyLink(projectId) {
     const card = project.getAttribute('data-card');
     
     // Create the project URL dynamically
-    const projectUrl = `${rootUrl}/${title}/${card}`;
+    const projectUrl = `${rootUrl}`;
+    // const projectUrl = `${rootUrl}/${card}/${title}`;
     // const projectUrl = `https://youtu.be/GP-F1SQT39c?si=v0SN58f6FBIpYdEq`;
     
     // Create a temporary input element to copy the URL
