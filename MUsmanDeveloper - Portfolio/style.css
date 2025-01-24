@@ -990,8 +990,6 @@ main {
 }
 
 .author-avatar img {
-    width: 100px;
-    height: 100px;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -1074,6 +1072,10 @@ main {
 }
 
 .carousel-track {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
     transition: transform 0.5s ease-in-out;
     width: fit-content;
 }
@@ -1345,6 +1347,11 @@ main {
 .footer-copyright {
     color: #000;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
 }
 
 .footer-copyright a {
