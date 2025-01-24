@@ -1,0 +1,878 @@
+
+
+
+/* Small desktops (769px to 1024px) */
+/* Large desktops (1025px to 1440px) */
+
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+
+    /*************************/
+    /* START - Body Section
+    /*************************/
+  
+    body {
+      font-size: 16px;
+    }
+  
+  
+    /*************************/
+    /* START - Header styles 
+    /*************************/
+  
+    .main-header {
+          max-width: 1024px;
+          width: 100%;
+          height: 70px;
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          gap: 20px; /* gap 20 to 5 i do */
+          padding: 15px 40px; /* Left Right 80 to 40 i do */
+          background-color: #fff;
+          position: fixed; 
+          top: 0; 
+          left: 0;
+          z-index: 1000; /* Ensures header stays above other elements */
+          border-bottom: 1px solid #eee;
+          margin-bottom: 70px;
+     }
+  
+  
+      /* Logo */
+      .logo {
+          width: 150px;
+          display: flex;
+          flex-direction: row;
+          gap: 0;
+          justify-content: center;
+          align-items: center;
+      }
+  
+      .text-logo {
+          width: 150px;
+          color: #007BFF;
+          font-size: 16px;
+          font-weight: 600;
+          text-align: left;
+      }
+  
+      .text-logo:hover {
+          color: #000;
+      }
+  
+      .image-logo {
+          max-width: 180px;
+          width: 150px;
+          display: block;
+      }
+  
+      /* Menu-Items */
+      .menu-items  {
+          /* width: 100%; */
+          display: flex;
+          justify-content: start;
+          align-items: center;
+          gap: 0;
+          margin: 0px;
+      }
+  
+      .menu-items ul {
+          list-style: none;
+          margin: 0px;
+          padding: 0px;
+          display: flex;
+      }
+  
+      .menu-items li {
+          margin-left: 20px;
+      }
+  
+      .menu-items a {
+          color: #000;
+          text-decoration: none;
+          font-size: 12px;
+          font-weight: 600;
+      }
+  
+      .menu-items li:hover a {
+          color: #007BFF;
+      }
+  
+      /* Header Buttons */
+      .header-buttons {
+          display: flex;
+          flex-direction: row;
+          justify-content: start;
+          text-align: center;
+          gap: 10px;
+      }
+  
+      .first-main-menu-btn {
+          background-color: #007BFF;
+          padding: 10px 15px; /* Left Right 30 to 20 i do */
+          border: none;
+          border-radius: 5px;
+      }
+  
+      .first-main-menu-btn a {
+          color: #fff;
+          font-size: 14px;
+          font-weight: 500;
+          text-decoration: none;
+          display: flex;
+          flex-direction: row;
+          justify-content: start;
+          gap: 5px;
+      }
+  
+      .first-main-menu-btn:hover {
+          background-color: var(--secondary-color);
+          color: #fff;
+          cursor: pointer;
+          text-decoration: none;
+      }
+  
+  
+    /* Only for Desktop & TV Devices */
+    @media screen and (min-width: 769px) and (max-width: 2560px)  {
+      .menu-icon { 
+          display: none; /* Hide menu icon on desktop */
+      }
+  
+      .menu-items {
+          display: flex; /* Show main menu items by default */
+      }
+      
+      /* Only display text logo on desktop */
+      .text-logo {
+          display: block;
+      }
+  
+      .image-logo {
+          display: none; /* Hide image logo by default */
+      }
+    }
+  
+  
+    /************************/
+    /* START - Main Section
+    /************************/
+  
+    main {
+      padding: 70px 40px 0px; /* top padding 70 = match the fixed-header height, mid mrg 80 to 40 i do */ 
+    }
+    
+  
+    /************************/
+    /* START - Hero Section
+    /************************/
+  
+    .slider-section {
+        /* position: relative; */
+        width: 100%;
+        height: 570px;
+        overflow: hidden;
+        padding: 0px;
+    }
+    
+    .hero-slider {
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .slider-bg-img-container {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+  
+    .slider-overlay-container {
+        margin: 90px 40px;
+        width: auto;
+        height: 400px;        
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    
+    .text {
+        max-width: 600px;
+        padding: 20px 0px;
+    }
+    
+    .animated-title {
+        font-size: 44px;
+        text-align: left;
+        opacity: 0;
+        margin-bottom: 15px;
+    }
+    
+    .prsn-occupation {
+        font-size: 36px; 
+    }
+    
+    .animated-description {
+        font-size: 18px;
+        opacity: 0;
+        text-align: left;
+        margin-bottom: 25px;
+    }
+    
+    .social-links {
+        padding: 20px 0px;
+        margin-bottom: 25px;
+    }
+    
+    .social-links a {
+        font-size: 24px;
+        margin-right: 65px;
+    }
+    
+    .slider-buttons {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 40px;
+    }
+    
+    .first-btn, .second-btn  {
+        width: 150px;
+        height: auto;
+        padding: 15px 5px;
+    }
+    
+    .first-btn a, .second-btn a {
+        font-size: 16px;
+        font-weight: 500;
+    }
+  
+    
+    /*************************/
+    /* START - About Section
+    /*************************/
+    
+    .about-section {
+      padding: 0px;
+    }
+    
+    .about-header h2 {
+        font-size: 32px;
+    }
+    
+    .about-content {
+        margin: 20px 0px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 30px; /* Space between the Personal-info , Description & Statistics Containers */
+    }
+    
+    .personal-info {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 80px; /* Space between the image container and bio-data container */
+    }
+    
+    .personal-profile {
+        width: 320px;
+        height: 280px;
+    }
+    
+    .personal-bio-data {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns of key points per row */
+        column-gap: 50px; /* Space between columns */
+        row-gap: 30px; /* Space between rows */
+    }
+  
+    .key-point span {
+        font-size: 16px;
+    }
+  
+    .key-point p {
+        font-size: 16px;
+    }
+  
+    .description {
+        font-size: 16px;
+        margin: 45px 0px;
+    }
+    
+    .statistics {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 100px;
+    }
+    
+    .card {
+        width: 300px;
+        height: 150px;
+        padding: 30px;
+    }
+    
+    .stats-value {
+        font-size: 48px;
+    }
+    
+    .stats-name {
+        font-size: 20px;
+    }
+    
+  
+    /****************************/
+    /* START - Services Section
+    /***************************/
+    
+    .services-section {
+        padding: 0px;
+    }
+    
+   .services-header h2 {
+        font-size: 32px;
+    }
+    
+    .services-content {
+        margin: 20px 0px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* gap: 30px; */
+    }
+    
+    .services-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        gap: 75px;
+    }
+    
+    .serv-tile-box {
+        width: 220px;
+    }
+  
+    .serv-tile-box-avatar {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .serv-tile-box-avatar i {
+        font-size: 32px;
+    }
+    
+    .serv-tile-box-title {
+        font-size: 18px;
+    }
+  
+    .serv-tile-box-meta {
+        font-size: 16px;
+    }
+    
+    
+    /**************************/
+    /* START - Skills Section
+    /**************************/
+  
+    .skills-section {
+        padding: 0px;
+    }
+    
+    .skills-header h2 {
+        font-size: 32px;
+    }
+    
+    .skills-content {
+        margin: 20px 0px; 
+        padding: 40px;
+        display: flex;
+        flex-wrap: wrap;           
+        justify-content: space-between;
+        gap: 20px;     
+    }
+    
+    .skill {
+        width: 510px;
+        margin: 10px 0px;
+    }
+    
+  
+    /******************************************/
+    /* START - Education & Experience Section
+    /*****************************************/
+  
+
+    .edu-expr-section {
+        max-width: 1024px;
+        width: 100%;
+        background-color: #fff;
+        margin-top: 50px;
+        padding: 0px;
+    }
+    
+    .edu-expr-header {
+        width: 100%;
+        margin: 20px 0px;
+        background-color: #f7f9fc;
+        border: none;
+    }
+    
+    .edu-expr-header h2 {
+        color: #333;
+        font-size: 32px;
+        font-weight: 600;
+        text-align: center;
+        margin: 0px 0px;
+    }
+    
+    /* Education and Experience Timelines Combine Container */
+    .edu-expr-content {
+        max-width: 1024px;
+        width: 100%;
+        margin: 20px 0px;
+        background-color: #f7f9fc;
+        padding: 40px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 20px;
+    }
+    
+    .education-timeline, .experience-timeline {
+        max-width: 480px;
+        width: 350px;
+        margin-right: 20px;
+        background-color: #f7f9fc;
+        border-radius: 8px;
+    }
+    
+    .education-header, .experience-header{
+        width: 100%;
+        margin: 20px 0px 40px;
+        border: none;
+    }
+    
+    .education-header h3, .experience-header h3 {
+        color: #333;
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .edu-timeline-container, .expr-timeline-container  {
+        display: flex;
+        gap: 30px;
+        width: 100%;
+    }
+    
+    .edu-timeline, .expr-timeline {
+        position: relative;
+        max-width: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        background-color: transparent;
+    }
+    
+    .edu-timeline::before, .expr-timeline::before {
+        content: '';
+        position: absolute;
+        width: 5px;
+        height: 100%;
+        background-color: #007BFF;
+        z-index: 0;
+    }
+    
+    .edu-node, .expr-node {
+        position: relative;
+        width: 20px;
+        height: 20px;
+        background-color: transparent; /* Initially transparent */
+        border: 5px solid #007BFF; /* Consistent border size */
+        border-radius: 50%;
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .edu-node::before, .expr-node::before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 10px; /* Smaller circle to hide line */
+        height: 10px;
+        background-color: #f4f4f9; /* Matches background to hide the line */
+        border-radius: 50%;
+        z-index: 1;
+    }
+    
+    .edu-node.edu-active, .expr-node.expr-active {
+        background-color: black;
+        border-color: black;
+    }
+    
+    .edu-node.edu-hover, .expr-node.expr-hover {
+        background-color: black;
+        border-color: black;
+    }
+    
+    .edu-cards, .expr-cards {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+    
+    .edu-card, .expr-card {
+        width: 460px;
+        height: 170px;
+        padding: 15px;
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .edu-card.edu-active, .expr-card.expr-active  {
+        background-color: lightblue;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+    }
+    
+    .edu-card.edu-hover, .expr-card.expr-hover {
+        background-color: lightblue;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        transform: scale(1.05);
+    }  
+    
+    .edu-card h5, .expr-card h5  {
+        margin: 0px 0px 10px;
+        text-align: left;
+        color: #007BFF;
+        font-size: 14px;
+    }
+    
+    .edu-card h3, .expr-card h3  {
+        margin: 10px 0px;
+        text-align: left;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    
+    .edu-card h4, .expr-card h4  {
+        margin: 10px 0px;
+        text-align: left;
+        color: #007BFF;
+        font-size: 16px;
+    }
+    
+    .edu-card p, .expr-card p {
+        margin: 10px 0px 0px;
+        text-align: justify;
+        color: #666;
+        font-size: 16px;
+    }
+    
+
+    /* 1 Education Timeline */
+    /* 1.1 Education Timeline Header */  
+    /* 1.2 Education Timeline Content */
+  
+    
+    /* 2 Experience Timeline */
+    /* 2.1 Experience Timeline Header */
+    /* 2.2 Experience Timeline Content */
+  
+    
+    /****************************/
+    /* START - Projects Section
+    /****************************/  
+    
+    .projects-section {
+        padding: 0px;
+    }
+    
+    .projects-header h2 {
+        font-size: 32px;
+    }
+    
+    .projects-content {
+        margin: 20px 0px;
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .projects-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 70px;
+    }
+    
+    .project {
+        width: 320px;
+        height: 350px;
+    }
+  
+    .project .project-title {
+        font-size: 18px;
+    }
+    
+    .projects-pagination .btn {
+        font-size: 16px;
+    }
+    
+  
+    /*********************************/
+    /* START - Testimonials  Section
+    /*********************************/
+  
+    .testimonials-section {
+      padding: 0px;
+    }
+    
+    .testimonials-header h2 {
+        font-size: 32px;
+    }
+    
+    .testimonials-content {
+        margin: 20px 0px;
+        padding: 40px;
+    }
+    
+    .starting-quotation-mark {
+        font-size: 30px;
+    }
+    
+    .testimonial-text {
+        font-size: 18px;
+    }
+    
+    .closing-quotation-mark { 
+        font-size: 30px;
+    }
+    
+    .testimonial-author {
+        margin-top: 60px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+    }
+  
+    .author-avatar img {
+      width: 100px;
+      height: 100px;
+    }
+  
+    .author-name {
+        font-size: 22px;
+        text-align: left;
+    }
+    
+    .author-designation {
+        font-size: 16px;
+        text-align: left;
+    }
+    
+    .author-social-links {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        gap: 30px;
+    }
+    
+    .author-social-links a {
+        font-size: 20px;
+    }
+    
+  
+    /*********************************/
+    /* START - Achievements Section
+    /*********************************/
+    
+    .achievements-section {
+        padding: 0px;
+    }
+    
+    .achievements-header h2 {
+        font-size: 32px;
+    }
+    
+    .achievements-carousel {
+        padding: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .carousel-track {
+        display: flex;
+        flex: 1 0 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 72px;
+    }
+    
+    .achievement {
+        width: 320px;
+        height: 270px;
+    }
+    
+    .achievement-card img {
+        width: 300px;
+        height: 200px;
+    }
+    
+    .achievement-card h3 {
+        font-size: 18px;
+    }
+    
+    .carousel-dots {
+        text-align: center;
+        padding-top: 40px;
+    }
+    
+  
+    /***************************/
+    /* START - Contact Section
+    /***************************/
+    
+    .contact-section {
+      padding: 0px;
+    }
+        
+    .contact-header h2 {
+        font-size: 32px;
+    }
+    
+    .contact-content {
+        margin: 20px 0px;
+        padding: 40px;
+    }
+    
+    .contact-form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+  
+    .contact-form label {
+        font-size: 16px;
+    }
+    
+    .contact-form input[type="text"],
+    .contact-form input[type="email"],
+    .contact-form textarea {
+        font-size: 16px;
+    }
+     
+    .submit-btn {
+        height: 40px;
+        font-size: 20px;
+    }
+    
+  
+    /***************************/
+    /* START - Footer Section
+    /***************************/
+    
+    .footer-section {
+      padding: 0px 40px 20px;
+    }
+  
+    .footer-columns {
+      padding: 20px 40px 40px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      gap: 80px;
+    }
+    
+    .footer-column-1 {
+      width: 35%;
+      margin: 0px;
+    }
+        
+    .footer-column-2 {
+      width: 30%;
+      margin: 0px;
+    }
+    
+    .footer-column-3 {
+      width: 35%;
+      margin: 0px;
+    }
+  
+    .footer-column-1 h3, .footer-column-2 h3, .footer-column-3 h3 {
+      font-size: 20px;
+    }
+  
+    .footer-column-1 .footer-about-content .footer-about-description {
+      font-size: 16px;
+    }
+  
+    .footer-column-1 .footer-about-content .footer-about-social-links li a {
+      font-size: 18px;
+    }
+    
+    .footer-column-2 .footer-pages-links li a {
+      font-size: 16px;
+    }
+  
+    .footer-column-3 .footer-contact-details li div a p {
+      font-size: 16px;
+    }
+  
+    .footer-copyright {
+      padding: 30px 0px 10px;
+    }
+  
+    .copyright-text {
+      font-size: 16px;
+    }
+  
+    .developer-text {
+      font-size: 14px;
+    }
+  
+    /*****************************/
+    /* START - Back-to-Top Button
+    /*****************************/
+  
+    .back-to-top {
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
+    }
+  
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+    
+
