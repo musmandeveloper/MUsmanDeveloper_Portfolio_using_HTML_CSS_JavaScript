@@ -581,7 +581,7 @@ function copyLink(projectId) {
     // Reset feedback message after a short delay
     setTimeout(function() {
         copyText.textContent = 'Copy Link';
-    }, 60000);  // Show "Copied!" for 2 seconds
+    }, 2000);  // Show "Copied!" for 2 seconds
 }
 
 // Close dropdown if clicked outside
