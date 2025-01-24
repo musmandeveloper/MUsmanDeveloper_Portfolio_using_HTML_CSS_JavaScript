@@ -1,26 +1,11 @@
 
 
-
 //---------------------------------------------------
 // START - Current Device Screen Size                          
 //---------------------------------------------------
 
-// Function to update the screen size in the p tag
-function updateScreenSize() {
-const width = window.innerWidth;
-const height = window.innerHeight;
-document.getElementById('screen-size').textContent = 
-    `Current Screen Size = ${width}x${height}px`;
-}
 
-// Update screen size on page load
-updateScreenSize();
-
-// Again Update screen size whenever the window is resized
-window.addEventListener('resize', updateScreenSize);
       
-
-
 //---------------------------------------------------
 // START - Website Loader                            
 //---------------------------------------------------
@@ -30,19 +15,15 @@ window.addEventListener("load", function() {
     preloader.style.display = "none";
 });
 
-
-
 //---------------------------------------------------
 // START - Header for Mobile Devices                               
 //---------------------------------------------------
-
 
 function toggleMobileMenu() {
     const menu = document.getElementById("mobile-menu");
     // Toggle 'active' class instead of directly modifying display
     menu.classList.toggle('active');  // This will toggle the visibility of the menu
 }
-
 
 //---------------------------------------------------
 // START - Hero Slider                               
@@ -76,8 +57,6 @@ const textContent = [
   }
   
   setInterval(changeTextContent, 2500); // Change every 3 seconds
-  
-
 
 //---------------------------------------------------
 // START - About Profile Image                             
@@ -96,8 +75,6 @@ function closeProfilePopup() {
     const popup = document.getElementById("profile-image-popup-modal");
     popup.style.display = "none";
 }
-
-
 
 //---------------------------------------------------
 // START - About Statistics Counter                               
@@ -137,8 +114,6 @@ document.addEventListener("DOMContentLoaded", () => {
   handleScroll(); // Run on page load in case already in view
 });
 
-
-
 //---------------------------------------------------
 // START - Skills Progress bars                               
 //---------------------------------------------------
@@ -167,8 +142,6 @@ const observer = new IntersectionObserver((entries) => {
 progressBars.forEach((bar) => {
     observer.observe(bar);
 });
-
-
 
 //---------------------------------------------------
 // START - Education Timeline bars                               
@@ -318,8 +291,6 @@ edu_cardElements.forEach((card) => {
     });
 });
 
-
-
 //---------------------------------------------------
 // START - Experience Timeline bars                               
 //---------------------------------------------------
@@ -468,8 +439,6 @@ expr_cardElements.forEach((card) => {
     });
 });
 
-
-
 //----------------------------------------------------------------------------------------
 // START - Projects Dynamic Views Counter, Social Share Icons, Dynamic Pagination Buttons                            
 //----------------------------------------------------------------------------------------
@@ -548,8 +517,6 @@ document.addEventListener('DOMContentLoaded', () => {
     setupViewTracking();
 });
 
-
-
 // Function to toggle the visibility of the share dropdown
 function toggleShareDropdown(event,ProjectCardId) {
     event.preventDefault();
@@ -567,7 +534,6 @@ function shareToPlatform(platform, projectId) {
     // Create the project URL dynamically
     const projectUrl = `${rootUrl}/${title}/${card}`;
     // const projectUrl = `https://youtu.be/GP-F1SQT39c?si=v0SN58f6FBIpYdEq`;
-    
     
     let shareUrl = '';
     switch(platform) {
@@ -715,8 +681,6 @@ document.addEventListener('DOMContentLoaded', () => {
     showCurrentPageArticles();
 });
 
-
-
 //---------------------------------------------------
 // START - Testimonial Slides                              
 //---------------------------------------------------
@@ -786,8 +750,6 @@ function resetAutoSlide() {
 // Initialize dots and start auto slide on page load
 initializeDots();
 startAutoSlide();
-
-
 
 //---------------------------------------------------
 // START - Achievements popup window                               
@@ -882,6 +844,11 @@ function closePopup() {
 }
 
 
+//------------------------------------------------
+// New Achievement section
+//-------------------------------------------------
+
+        
 
 //-------------------------------------------------------------------------------------------
 // START - Contact US Form for Email using EmailJS directly from code without Server Language                             
@@ -920,8 +887,6 @@ function closePopup() {
 //         });
 // });
 
-
-
 //---------------------------------------------------
 // START - Back-to-Top Button                               
 //---------------------------------------------------
@@ -933,12 +898,11 @@ window.onscroll = function() {
     } else {
       topButton.style.display = "none";
     }
-  };
+};
 
-  function scrollToTop() {
+function scrollToTop() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
-  }
-
+}
 
   
