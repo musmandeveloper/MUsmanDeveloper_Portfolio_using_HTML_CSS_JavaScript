@@ -150,7 +150,7 @@ progressBars.forEach((bar) => {
 const edu_data = [
     {
         year: 'Feb 2024 - Mar 2024',
-        title: 'Web Design',
+        title: 'BSCS (Bachelor of Science in Computer Science)',
         organization: 'COMSATS University Islamabad, Wah Campus',
         description: 'Details about education 1. Details about education 1. Details about education 1. Details about education 1. Details about education 1.'
     },
