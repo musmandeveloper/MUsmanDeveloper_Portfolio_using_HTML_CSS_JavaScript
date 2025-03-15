@@ -782,8 +782,8 @@ main {
 }
 
 .project img {
-    width: 100%;
-    height: auto;
+    width: 320px;
+    height: 200px;
 }
 
 .project .project-title-container {
