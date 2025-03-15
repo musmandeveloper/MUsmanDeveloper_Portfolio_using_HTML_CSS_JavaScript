@@ -500,7 +500,7 @@ function setupViewTracking() {
     document.querySelectorAll('.project-link-source a').forEach(link => {
         link.addEventListener('click', function (event) {
             // Prevent the default action for this demo (remove this line if links are live)
-            event.preventDefault();
+            // event.preventDefault();
 
             // Get the project ID from the data-card attribute
             const projectId = this.closest('article').dataset.card;
