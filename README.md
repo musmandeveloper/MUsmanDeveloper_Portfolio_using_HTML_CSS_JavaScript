@@ -12,18 +12,18 @@ Below are the following screenshots (SS) of the project:
 Desktop Version:
 <table>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/b7a3e019-a83b-424b-8043-d4696161929a" alt="MUsmanDeveloper Portfolio HTML CSS JS Website - Image 01"  width='500' /></td>
-    <td><img src="https://github.com/user-attachments/assets/e14417e1-cef7-45a8-b534-48dec730d609" alt="MUsmanDeveloper Portfolio HTML CSS JS Website - Image 02"  width='500' /></td>
-    <td><img src="https://github.com/user-attachments/assets/0cfb0598-dc26-45da-872d-bb08aebe5108" alt="MUsmanDeveloper Portfolio HTML CSS JS Website - Image 03"  width='500' /></td>
+    <td><img src="https://github.com/user-attachments/assets/b7a3e019-a83b-424b-8043-d4696161929a" alt="MUsmanDeveloper Portfolio HTML CSS JS Website - Desktop Image 01"  width='500' /></td>
+    <td><img src="https://github.com/user-attachments/assets/e14417e1-cef7-45a8-b534-48dec730d609" alt="MUsmanDeveloper Portfolio HTML CSS JS Website - Desktop Image 02"  width='500' /></td>
+    <td><img src="https://github.com/user-attachments/assets/0cfb0598-dc26-45da-872d-bb08aebe5108" alt="MUsmanDeveloper Portfolio HTML CSS JS Website - Desktop Image 03"  width='500' /></td>
   </tr>
 </table>
 
 Mobile Version:
 <table>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/b7a3e019-a83b-424b-8043-d4696161929a" alt="MUsmanDeveloper Portfolio HTML CSS JS Website - Image 01"  width='500' /></td>
-    <td><img src="https://github.com/user-attachments/assets/e14417e1-cef7-45a8-b534-48dec730d609" alt="MUsmanDeveloper Portfolio HTML CSS JS Website - Image 02"  width='500' /></td>
-    <td><img src="https://github.com/user-attachments/assets/0cfb0598-dc26-45da-872d-bb08aebe5108" alt="MUsmanDeveloper Portfolio HTML CSS JS Website - Image 03"  width='500' /></td>
+    <td><img src="https://github.com/user-attachments/assets/00317bab-81a6-488c-94d2-f76c04d08920" alt="MUsmanDeveloper Portfolio HTML CSS JS Website - Mobile Image 01"  width='500' /></td>
+    <td><img src="https://github.com/user-attachments/assets/898d968c-67f9-43bf-bf97-8207ed698042" alt="MUsmanDeveloper Portfolio HTML CSS JS Website - Mobile Image 02"  width='500' /></td>
+    <td><img src="https://github.com/user-attachments/assets/87a10be7-de77-4f6f-b423-c635c4d5c32a" alt="MUsmanDeveloper Portfolio HTML CSS JS Website - Mobile Image 03"  width='500' /></td>
   </tr>
 </table>
 
