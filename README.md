@@ -30,7 +30,7 @@ Mobile Version:
 
 
 ## 🎥 Videos:
-Below are the videos of the project:
+Below are the following videos of the project:
 
 [Demo Video of MUsmanDeveloper Portfolio using HTML CSS JS](https://github.com/user-attachments/assets/e653a4eb-aca6-4dd8-a0a9-87f2f55ae5e7)
 
