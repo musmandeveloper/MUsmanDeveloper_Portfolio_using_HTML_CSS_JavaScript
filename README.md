@@ -9,11 +9,21 @@ A modern and professional portfolio website designed to showcase the skills, ach
 ## 📸 Screenshots:
 Below are the following screenshots (SS) of the project:
 
+Desktop Version:
 <table>
   <tr>
-    <td><img src="https://github.com/user-attachments/assets/29fa6803-4293-461c-a143-afbf54e3bd8f" alt="MSPMS-Project Folder Structure"  width='500' /></td>
-    <td><img src="https://musmandeveloper.vercel.app/assets/about_section/IPS-38314%20Orginal%20BlueBG%20.jpg"  width='500' /></td>
-    <td><img src="https://github.com/user-attachments/assets/29fa6803-4293-461c-a143-afbf54e3bd8f" alt="MSPMS-Project Folder Structure"  width='500' /></td>
+    <td><img src="https://github.com/user-attachments/assets/b7a3e019-a83b-424b-8043-d4696161929a" alt="MUsmanDeveloper Portfolio HTML CSS JS Website - Image 01"  width='500' /></td>
+    <td><img src="https://github.com/user-attachments/assets/e14417e1-cef7-45a8-b534-48dec730d609" alt="MUsmanDeveloper Portfolio HTML CSS JS Website - Image 02"  width='500' /></td>
+    <td><img src="https://github.com/user-attachments/assets/0cfb0598-dc26-45da-872d-bb08aebe5108" alt="MUsmanDeveloper Portfolio HTML CSS JS Website - Image 03"  width='500' /></td>
+  </tr>
+</table>
+
+Mobile Version:
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/b7a3e019-a83b-424b-8043-d4696161929a" alt="MUsmanDeveloper Portfolio HTML CSS JS Website - Image 01"  width='500' /></td>
+    <td><img src="https://github.com/user-attachments/assets/e14417e1-cef7-45a8-b534-48dec730d609" alt="MUsmanDeveloper Portfolio HTML CSS JS Website - Image 02"  width='500' /></td>
+    <td><img src="https://github.com/user-attachments/assets/0cfb0598-dc26-45da-872d-bb08aebe5108" alt="MUsmanDeveloper Portfolio HTML CSS JS Website - Image 03"  width='500' /></td>
   </tr>
 </table>
 
