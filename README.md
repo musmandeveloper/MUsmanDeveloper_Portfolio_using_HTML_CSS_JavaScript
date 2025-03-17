@@ -9,6 +9,20 @@ A modern and professional portfolio website designed to showcase the skills, ach
 ## 📸 Screenshots:
 Below are the following screenshots (SS) of the project:
 
+<table>
+  <tr>
+    <td><img src="https://github.com/user-attachments/assets/29fa6803-4293-461c-a143-afbf54e3bd8f" alt="MSPMS-Project Folder Structure"  width='500' /></td>
+    <td><img src="https://musmandeveloper.vercel.app/assets/about_section/IPS-38314%20Orginal%20BlueBG%20.jpg"  width='500' /></td>
+    <td><img src="https://github.com/user-attachments/assets/29fa6803-4293-461c-a143-afbf54e3bd8f" alt="MSPMS-Project Folder Structure"  width='500' /></td>
+  </tr>
+</table>
+
+
+
+## 🎥 Videos:
+Below are the videos of the project:
+
+[Demo Video of MUsmanDeveloper Portfolio using HTML CSS JS](https://github.com/user-attachments/assets/e653a4eb-aca6-4dd8-a0a9-87f2f55ae5e7)
 
 ## 🚀 Features:
 The project have following features:
