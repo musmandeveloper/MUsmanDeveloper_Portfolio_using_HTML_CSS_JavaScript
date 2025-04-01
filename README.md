@@ -175,3 +175,16 @@ By contributing to this repository, you agree that your contributions will also 
 
 
 
+## Font-Categories & their Font-Families:
+
+* **Feet → Serif:** Used for formal, print, long text (books, newspapers).  
+  *Examples:* Times New Roman, Georgia, Garamond.  
+
+* **No Feet → Sans-Serif:** Used for modern, digital content (websites, apps).  
+  *Examples:* Arial, Helvetica, Verdana.  
+
+* **Equal Width → Monospace:** Used for code editors, typewriter effects.  
+  *Examples:* Courier New, Consolas, Monaco.  
+
+* **Ornate/Stylish/Artistic → Decorative:** Used for headers, logos (avoid for body text).  
+  *Examples:* Lobster, Pacifico, Brush Script.
