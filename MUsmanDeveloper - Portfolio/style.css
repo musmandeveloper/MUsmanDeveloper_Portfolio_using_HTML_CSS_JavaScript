@@ -535,25 +535,21 @@ main {
 }
 
 /* Different filling colors for different skills Progress-bars */
-.first-skill-progress-bar .skill-progress-fill {
+/* .first-skill-progress-bar .skill-progress-fill {
     background-color: #6244C5; /* Purple */
 }
-
 .second-skill-progress-bar .skill-progress-fill {
     background-color: #FFC448; /* Yellow */
 }
-
 .third-skill-progress-bar .skill-progress-fill {
     background-color: #DC3545; /* Red */
 }
-
 .fourth-skill-progress-bar .skill-progress-fill {
     background-color: #0dcaf0; /* Cyan */
 }
-
 .fifth-skill-progress-bar .skill-progress-fill {
     background-color: #05bb66; /* Cyan */
-}
+} */
 
 
 
