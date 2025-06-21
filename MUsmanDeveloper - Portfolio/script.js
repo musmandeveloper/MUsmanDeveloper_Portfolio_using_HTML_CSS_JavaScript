@@ -184,49 +184,6 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
-
-// document.addEventListener('DOMContentLoaded', function() {
-//     // Array of color options (you can add more)
-//     const progressBarColors = [
-//         '#6244C5', // Purple
-//         '#FFC448', // Yellow
-//         '#DC3545', // Red
-//         '#0dcaf0', // Cyan
-//         '#05bb66', // Green
-//         '#6610f2', // Indigo
-//         '#d63384', // Pink
-//         '#fd7e14', // Orange
-//         '#20c997', // Teal
-//         '#6f42c1'  // Violet
-//     ];
-    
-//     // Get all progress bars
-//     const progressBars = document.querySelectorAll('.skill-progress-bar');
-    
-//     // Apply random color to each progress bar
-//     progressBars.forEach(bar => {
-//         // Get random color from array
-//         const randomColor = progressBarColors[Math.floor(Math.random() * progressBarColors.length)];
-        
-//         // Apply color to the fill element
-//         const fill = bar.querySelector('.skill-progress-fill');
-//         if (fill) {
-//             fill.style.backgroundColor = randomColor;
-//         }
-        
-//         // Remove any existing color classes (optional)
-//         bar.classList.remove(
-//             'first-skill-progress-bar',
-//             'second-skill-progress-bar',
-//             'third-skill-progress-bar',
-//             'fourth-skill-progress-bar',
-//             'fifth-skill-progress-bar'
-//         );
-//     });
-// });
-
-
 // Select all progress bars to display their progress percentage
 const progressBars = document.querySelectorAll('.skill-progress-fill');
 
@@ -258,19 +215,19 @@ progressBars.forEach((bar) => {
 
 const edu_data = [
     {
-        year: 'Feb 2024 - Mar 2024',
+        year: 'Sep 2020 - Jun 2024',
         title: 'BSCS (Bachelor of Science in Computer Science)',
         organization: 'COMSATS University Islamabad, Wah Campus',
         description: 'Details about education 1. Details about education 1. Details about education 1. Details about education 1. Details about education 1.'
     },
     {
-        year: 'Feb 2024 - Mar 2024',
-        title: 'FSc Pre-Eng',
+        year: 'Sep 2018 - Apr 2020',
+        title: 'FSc Pre-Engineering',
         organization: 'FG Degree College For Men, Wah Cantt',
         description: 'Details about education 2. Details about education 2.Details about education 2. Details about education 2. Details about education 2.'
     },
     {
-        year: 'Feb 2016 - Mar 2018',
+        year: 'Apr 2016 - Mar 2018',
         title: 'Matric Science (Biology)',
         organization: 'FG Public High School, Taxila Cantt',
         description: 'Details about education 3. Details about education 3. Details about education 3. Details about education 3. Details about education 3.'
@@ -406,23 +363,11 @@ edu_cardElements.forEach((card) => {
 
 const expr_data = [
     {
-        year: 'Feb 2024 - Mar 2024',
+        year: 'Apr 2025 - Present',
         title: 'Internee as Web Developer',
-        organization: 'ABC Company, XYZ Address',
-        description: 'Details about experience 1. Details about experience 1. Details about experience 1. Details about experience 1. Details about experience 1.'
+        organization: 'Saturn7 Solutions, Room # 7, Mir Tariq Plaza, Museum Road, Taxila Cantt',
+        description: 'Working on a MERN Full Stack Web Project which is an eCommerce novel books purchasing and reading system. Using technologies MongoDb, Express JS, React JS and Node JS.'
     },
-    {
-        year: 'Feb 2024 - Mar 2024',
-        title: 'Internee as Web Developer',
-        organization: 'ABC Company, XYZ Address',
-        description: 'Details about experience 2. Details about experience 2. Details about experience 2. Details about experience 2. Details about experience 2.'
-    },
-    {
-        year: 'Feb 2024 - Mar 2024',
-        title: 'Internee as Web Developer',
-        organization: 'ABC Company, XYZ Address',
-        description: 'Details about experience 3. Details about experience 3. Details about experience 3. Details about experience 3. Details about experience 3.'
-    }
 ];
 
 const expr_timeline = document.getElementById('expr-timeline');
