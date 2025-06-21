@@ -121,44 +121,110 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Setting different random color for each skills progress bar
 document.addEventListener('DOMContentLoaded', function() {
-    // Array of color options (you can add more)
+    // Array of color options
     const progressBarColors = [
-        '#6244C5', // Purple
-        '#FFC448', // Yellow
-        '#DC3545', // Red
-        '#0dcaf0', // Cyan
-        '#05bb66', // Green
-        '#6610f2', // Indigo
-        '#d63384', // Pink
-        '#fd7e14', // Orange
-        '#20c997', // Teal
-        '#6f42c1'  // Violet
+        '#6244C5', '#FFC448', '#DC3545', '#0dcaf0', '#05bb66',
+        '#6610f2', '#d63384', '#fd7e14', '#20c997', '#6f42c1',
+        '#17a2b8', '#28a745', '#ffc107', '#343a40', '#6c757d'
     ];
     
-    // Get all progress bars
-    const progressBars = document.querySelectorAll('.skill-progress-bar');
+    // Shuffle array function (Fisher-Yates algorithm)
+    function shuffleArray(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
     
-    // Apply random color to each progress bar
-    progressBars.forEach(bar => {
-        // Get random color from array
-        const randomColor = progressBarColors[Math.floor(Math.random() * progressBarColors.length)];
+    // Get all skill cards
+    const skillCards = document.querySelectorAll('.skill');
+    
+    // Create a shuffled copy of colors
+    let availableColors = shuffleArray([...progressBarColors]);
+    let lastUsedColor = null;
+    
+    skillCards.forEach((card, index) => {
+        const progressBar = card.querySelector('.skill-progress-bar');
+        const fill = progressBar?.querySelector('.skill-progress-fill');
         
-        // Apply color to the fill element
-        const fill = bar.querySelector('.skill-progress-fill');
-        if (fill) {
-            fill.style.backgroundColor = randomColor;
+        if (!fill) return;
+        
+        // Get next color (ensuring no adjacent duplicates)
+        let color;
+        if (availableColors.length === 0) {
+            availableColors = shuffleArray([...progressBarColors]);
         }
         
-        // Remove any existing color classes (optional)
-        bar.classList.remove(
-            'first-skill-progress-bar',
-            'second-skill-progress-bar',
-            'third-skill-progress-bar',
-            'fourth-skill-progress-bar',
-            'fifth-skill-progress-bar'
-        );
+        color = availableColors.find(c => c !== lastUsedColor) || availableColors[0];
+        lastUsedColor = color;
+        
+        // Remove used color from available colors
+        availableColors = availableColors.filter(c => c !== color);
+        
+        // Apply the color
+        fill.style.backgroundColor = color;
+        
+        // Add smooth transition effect
+        fill.style.transition = 'width 1s ease-in-out, background-color 0.5s ease';
+        
+        // Add hover effect
+        progressBar.addEventListener('mouseenter', () => {
+            fill.style.filter = 'brightness(1.1)';
+        });
+        progressBar.addEventListener('mouseleave', () => {
+            fill.style.filter = 'brightness(1)';
+        });
+        
+        // Add animation on first load
+        setTimeout(() => {
+            fill.style.width = fill.getAttribute('data-percentage');
+        }, 100 + index * 100);
     });
 });
+
+
+
+
+// document.addEventListener('DOMContentLoaded', function() {
+//     // Array of color options (you can add more)
+//     const progressBarColors = [
+//         '#6244C5', // Purple
+//         '#FFC448', // Yellow
+//         '#DC3545', // Red
+//         '#0dcaf0', // Cyan
+//         '#05bb66', // Green
+//         '#6610f2', // Indigo
+//         '#d63384', // Pink
+//         '#fd7e14', // Orange
+//         '#20c997', // Teal
+//         '#6f42c1'  // Violet
+//     ];
+    
+//     // Get all progress bars
+//     const progressBars = document.querySelectorAll('.skill-progress-bar');
+    
+//     // Apply random color to each progress bar
+//     progressBars.forEach(bar => {
+//         // Get random color from array
+//         const randomColor = progressBarColors[Math.floor(Math.random() * progressBarColors.length)];
+        
+//         // Apply color to the fill element
+//         const fill = bar.querySelector('.skill-progress-fill');
+//         if (fill) {
+//             fill.style.backgroundColor = randomColor;
+//         }
+        
+//         // Remove any existing color classes (optional)
+//         bar.classList.remove(
+//             'first-skill-progress-bar',
+//             'second-skill-progress-bar',
+//             'third-skill-progress-bar',
+//             'fourth-skill-progress-bar',
+//             'fifth-skill-progress-bar'
+//         );
+//     });
+// });
 
 
 // Select all progress bars to display their progress percentage
