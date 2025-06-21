@@ -118,7 +118,50 @@ document.addEventListener("DOMContentLoaded", () => {
 // START - Skills Progress bars                               
 //---------------------------------------------------
 
-// Select all progress bars
+
+// Setting different random color for each skills progress bar
+document.addEventListener('DOMContentLoaded', function() {
+    // Array of color options (you can add more)
+    const progressBarColors = [
+        '#6244C5', // Purple
+        '#FFC448', // Yellow
+        '#DC3545', // Red
+        '#0dcaf0', // Cyan
+        '#05bb66', // Green
+        '#6610f2', // Indigo
+        '#d63384', // Pink
+        '#fd7e14', // Orange
+        '#20c997', // Teal
+        '#6f42c1'  // Violet
+    ];
+    
+    // Get all progress bars
+    const progressBars = document.querySelectorAll('.skill-progress-bar');
+    
+    // Apply random color to each progress bar
+    progressBars.forEach(bar => {
+        // Get random color from array
+        const randomColor = progressBarColors[Math.floor(Math.random() * progressBarColors.length)];
+        
+        // Apply color to the fill element
+        const fill = bar.querySelector('.skill-progress-fill');
+        if (fill) {
+            fill.style.backgroundColor = randomColor;
+        }
+        
+        // Remove any existing color classes (optional)
+        bar.classList.remove(
+            'first-skill-progress-bar',
+            'second-skill-progress-bar',
+            'third-skill-progress-bar',
+            'fourth-skill-progress-bar',
+            'fifth-skill-progress-bar'
+        );
+    });
+});
+
+
+// Select all progress bars to display their progress percentage
 const progressBars = document.querySelectorAll('.skill-progress-fill');
 
 const observer = new IntersectionObserver((entries) => {
