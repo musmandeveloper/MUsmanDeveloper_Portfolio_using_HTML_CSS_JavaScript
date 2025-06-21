@@ -366,7 +366,7 @@ const expr_data = [
         year: 'Apr 2025 - Present',
         title: 'Internee as Web Developer',
         organization: 'Saturn7 Solutions, Room # 7, Mir Tariq Plaza, Museum Road, Taxila Cantt',
-        description: 'Working on a MERN Full Stack Web Project which is an eCommerce novel books purchasing and reading system. Using technologies MongoDb, Express JS, React JS and Node JS.'
+        description: 'Working on a MERN Full Stack Web Project which is an eCommerce novel books purchasing and reading system.'
     },
 ];
 
